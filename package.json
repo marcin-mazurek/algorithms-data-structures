@@ -1,0 +1,16 @@
+{
+  "name": "algorithms-data-structures",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  },
+  "scripts": {
+    "test": "mocha --require test-setup.js --recursive data-structures --recursive algorithms --reporter min --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
