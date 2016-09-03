@@ -2,10 +2,10 @@ class Queue {
   constructor() {
     this.elements = [];
   }
-  push(element) {
+  enqueue(element) {
     this.elements.unshift(element);
   }
-  pop() {
+  dequeue() {
     return this.elements.pop();
   }
 }
@@ -13,11 +13,11 @@ class Queue {
 describe('queue', () => {
   it('stores elements in FIFO order', () => {
     const myStack = new Queue();
-    myStack.push('a');
-    myStack.push('b');
-    myStack.push('c');
-    expect(myStack.pop()).to.equal('a');
-    expect(myStack.pop()).to.equal('b');
-    expect(myStack.pop()).to.equal('c');
+    myStack.enqueue('a');
+    myStack.enqueue('b');
+    myStack.enqueue('c');
+    expect(myStack.dequeue()).to.equal('a');
+    expect(myStack.dequeue()).to.equal('b');
+    expect(myStack.dequeue()).to.equal('c');
   });
 });
