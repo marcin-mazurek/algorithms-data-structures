@@ -8,6 +8,9 @@ class Stack {
   pop() {
     return this.elements.pop();
   }
+  get size() {
+    return this.elements.length;
+  }
 }
 
 describe('stack', () => {
@@ -21,3 +24,5 @@ describe('stack', () => {
     expect(myStack.pop()).to.equal('a');
   });
 });
+
+module.exports = Stack;
