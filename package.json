@@ -6,10 +6,12 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "devtool": "^2.2.0"
   },
   "scripts": {
-    "test": "mocha --require test-setup.js --recursive data-structures --recursive algorithms --reporter min --watch"
+    "test": "mocha --require test-setup.js --recursive data-structures --recursive algorithms --reporter min --watch",
+    "test:debug": "devtool ./node_modules/mocha/bin/_mocha --require ./test-setup.js --recursive data-structures --recursive algorithms"
   },
   "author": "",
   "license": "ISC"
