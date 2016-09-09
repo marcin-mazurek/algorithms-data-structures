@@ -1,6 +1,6 @@
 class Queue {
-  constructor() {
-    this.elements = [];
+  constructor(initialElements = []) {
+    this.elements = initialElements.reverse();
   }
   enqueue(element) {
     this.elements.unshift(element);
@@ -8,7 +8,12 @@ class Queue {
   dequeue() {
     return this.elements.pop();
   }
+  get size() {
+    return this.elements.length;
+  }
 }
+
+module.exports = Queue;
 
 describe('queue', () => {
   it('stores elements in FIFO order', () => {
