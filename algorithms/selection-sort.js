@@ -24,7 +24,7 @@ function sort(array) {
 };
 
 describe('selection sort function', () => {
-  it('sorts the array', () => {
+  it('sorts an array', () => {
     expect(sort([5, 3, 1, 4, 2])).to.deep.equal([1, 2, 3, 4, 5]);
     expect(sort([22, 11, 99, 88, 9, 7, 42])).to.deep.equal([7, 9, 11, 22, 42, 88, 99]);
   });
