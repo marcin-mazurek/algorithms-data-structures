@@ -15,13 +15,13 @@ class Stack {
 
 describe('stack', () => {
   it('stores elements in LIFO order', () => {
-    const myStack = new Stack();
-    myStack.push('a');
-    myStack.push('b');
-    myStack.push('c');
-    expect(myStack.pop()).to.equal('c');
-    expect(myStack.pop()).to.equal('b');
-    expect(myStack.pop()).to.equal('a');
+    const stack = new Stack();
+    stack.push('a');
+    stack.push('b');
+    stack.push('c');
+    expect(stack.pop()).to.equal('c');
+    expect(stack.pop()).to.equal('b');
+    expect(stack.pop()).to.equal('a');
   });
 });
 
