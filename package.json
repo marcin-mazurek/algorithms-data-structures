@@ -10,8 +10,8 @@
     "devtool": "^2.2.0"
   },
   "scripts": {
-    "test": "mocha --require test-setup.js --recursive data-structures --recursive algorithms --reporter min --watch",
-    "test:debug": "devtool ./node_modules/mocha/bin/_mocha --require ./test-setup.js --recursive data-structures --recursive algorithms"
+    "test": "mocha --require test-setup.js --recursive data-structures --recursive algorithms --recursive functional-programming --reporter min --watch",
+    "test:debug": "devtool ./node_modules/mocha/bin/_mocha --require ./test-setup.js --recursive data-structures --recursive algorithms --recursive functional-programming"
   },
   "author": "",
   "license": "ISC"
